@@ -7,7 +7,7 @@ public class Cliente {
 		this.fabricaCarro = fabricaCarro;
 	}
 	
-	public void criaCarro(String tipo) {
+	public void escolherCarro(String tipo) {
 		Carro carro;
 		carro = fabricaCarro.criarCarro(tipo);
 	}
@@ -19,7 +19,7 @@ public class Cliente {
 		
 		CarrosFactory fabricaCarro = new CarrosFactory();
 		Cliente carro = new Cliente(fabricaCarro);
-		carro.criaCarro(tipo);
+		carro.escolherCarro(tipo);
 	}
 	
 }
